@@ -11,7 +11,6 @@ permissions:
 jobs:
   apk:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
     steps:
       - name: "1. Baixar o projeto"
         uses: actions/checkout@v4
