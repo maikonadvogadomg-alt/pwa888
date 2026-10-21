@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparação Mini SK</title>
+<style>
+:root { --bg:#0f172a; --bg2:#16213a; --tx:#e6edf8; --mu:#9fb0cc; --li:#2b3a5c; --ok:#34d399; --am:#fbbf24; --er:#f87171; --az:#60a5fa; }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) { --bg:#f6f7fb; --bg2:#fff; --tx:#1d2433; --mu:#5b6478; --li:#dde2ec; --ok:#0f7a52; --am:#a16207; --er:#b42318; --az:#1d4ed8; } }
+body { margin:0; background:var(--bg); color:var(--tx); font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+main { max-width:820px; margin:0 auto; padding:16px; }
+h1 { font-size:1.3rem; margin:4px 0 2px; } h2 { font-size:1.08rem; margin:22px 0 8px; }
+.muted { color:var(--mu); font-size:.92rem; }
+.card { background:var(--bg2); border:1px solid var(--li); border-radius:12px; padding:12px 14px; margin:8px 0; }
+.arq { font-family:ui-monospace,Consolas,monospace; font-size:.9rem; overflow-wrap:anywhere; }
+.tag { display:inline-block; font-size:.78rem; padding:1px 8px; border-radius:99px; border:1px solid var(--li); margin-left:4px; }
+.ok { color:var(--ok); } .am { color:var(--am); } .er { color:var(--er); }
+ul { padding-left:20px; margin:6px 0; } li { margin:3px 0; }
+.big { font-size:1.05rem; }
+</style>
+</head>
+<body>
+<main>
+<h1>⚖️ Mini SK 17/10 × v20/10-D</h1>
+<p class="muted">O que mudou de uma versão para a outra, arquivo por arquivo, e se cada mudança mexe no ⚡ Node ou no 📱 Termux. Comparei os dois códigos inteiros, linha por linha.</p>
+
+<div class="card big">
+<b>Resumo:</b>
+<ul>
+<li><span class="ok">✅</span> <b>Nada foi apagado.</b> Todos os arquivos da 17/10 continuam na 20/10-D.</li>
+<li><span class="ok">✅</span> <b>O ⚡ Node é o mesmo código.</b> Só mudaram 5 linhas de <b>texto</b> (o aviso de Netlify). Os botões, o lacre e a ponte "⬇ Trazer do Node" estão iguais.</li>
+<li><span class="am">⚠️</span> <b>O 📱 Termux foi o que mais mudou</b> (+198 linhas): ▶ Ligar tudo, árvore ligada, a ponte religando sozinha, o Plano B e o 👁 Visualizar.</li>
+<li>➕ <b>8 arquivos novos</b>: 🚀 Publicar, 📥 Importar/Picotar e a largura do painel.</li>
+</ul>
+</div>
+
+<h2>➕ Arquivos novos (não existiam na 17/10)</h2>
+<div class="card"><div class="arq">js/91b-publicar.js</div>O botão <b>🚀 Publicar</b> (site/PWA num toque) e a lista <b>📜 Minhas publicações</b>. <span class="tag">não mexe no Node/Termux</span></div>
+<div class="card"><div class="arq">js/92c-importar.js · js/lib/picotador/ (4 arquivos) · js/lib/jszip.min.js</div>O botão <b>📥 Importar tudo / ✂️ Picotar</b>: memória, backup, projeto .zip e conversas do ChatGPT/Claude. <span class="tag">não mexe no Node/Termux</span></div>
+<div class="card"><div class="arq">js/86g-largura.js</div>Arrastar a borda do painel para alargar (só no computador). <span class="tag">não mexe no Node/Termux</span></div>
+
+<h2>✏️ Arquivos que mudaram</h2>
+<div class="card"><div class="arq">js/86b-node.js — ⚡ Node <span class="tag ok">+5 −5, só texto</span></div>
+<ul><li>Linha 11 e 161: o aviso "abra pelo GitHub Pages ou Netlify" virou "abra o index.html de dentro da pasta".</li>
+<li>Linhas 180–182: o passo a passo do "Como deixar sempre pronto" (o mesmo assunto, sem Netlify).</li>
+<li><b>Nenhuma linha de funcionamento mudou</b>: o lacre, o ▶ Ligar, os botões Ctrl+C/Tab, ⬇ Trazer, ⬆ Mandar, 🐙 GitHub, ⚡ Comandos prontos e o 👁 Ver aqui são os da 17/10.</li></ul></div>
+
+<div class="card"><div class="arq">js/86c-termux.js — 📱 Termux <span class="tag am">+198 −35</span></div>
+<ul><li><b>▶ Ligar tudo</b>: conecta, liga a ponte, manda o projeto e liga a árvore num toque.</li>
+<li><b>🔗 Árvore ligada</b>: o que você muda vai sozinho para o Termux; o que o terminal cria volta sozinho.</li>
+<li><b>A ponte</b>: antes ia num comando enorme (derrubava a conexão); agora vai em pedacinhos, <b>religa sozinha</b> se o Android fechar, e mostra no terminal o motivo se não ligar (🩺).</li>
+<li><b>🖐 Plano B</b>: copiar o comando da ponte e colar no Termux.</li>
+<li><b>👁 Visualizar</b> porta, <b>🌐 Servidor no ar</b>, 💾 cópia na pasta do celular, 🔋 não deixar o Android fechar.</li>
+<li>No <b>computador</b> (.exe): o painel ficou igual ao do Node, largo.</li></ul></div>
+
+<div class="card"><div class="arq">js/86f-pasta-viva.js — 📁 Pasta viva (só no .exe) <span class="tag ok">+4 −4, conserto</span></div>Ela apagava sozinha a pasta <b>.sk</b> (a memória da IA). Agora não apaga mais.</div>
+
+<div class="card"><div class="arq">js/20-zip.js · js/10-fs.js · js/50-tree.js</div>Abrir arquivos <b>.tar / .tar.gz / .tgz</b> (além do .zip).</div>
+
+<div class="card"><div class="arq">js/99-app.js <span class="tag">+8 −4</span></div>
+<ul><li>Os dois botões novos no menu (🚀 Publicar e 📥 Importar).</li>
+<li>Pedir ao celular para guardar os projetos "para sempre" (de novo no 1º toque, se ele recusar).</li>
+<li>O "Abrir .zip como projeto" também aceita .tar.</li></ul></div>
+
+<div class="card"><div class="arq">js/80-ai.js <span class="tag">+3 −1</span></div>O botão <b>✂️ Picotar</b> na 🤖 IA e recarregar a memória depois de importar.</div>
+
+<div class="card"><div class="arq">js/00-core.js · index.html · sw.js · css/app.css · LEIA-ME.md</div>
+<ul><li>O número da versão (<b>v20/10-D</b>) e o nome da "memória" (cache) interna, para o navegador não mostrar versão velha.</li>
+<li>Os botões novos no menu e o visual deles.</li>
+<li>O LEIA-ME sem a palavra Netlify.</li></ul></div>
+
+<h2>🔍 O que isso quer dizer</h2>
+<div class="card">
+<ul>
+<li>Se o <b>⚡ Node</b> liga na 17/10 e não liga na 20/10-D <b>aberta do mesmo jeito</b>, o motivo <b>não está no código do Node</b>, porque ele é igual. O mais provável é a versão que está abrindo (veja se aparece <b>v20/10-D</b>) ou ele não ter chegado ao "✅ Node ligado".</li>
+<li>Se o <b>📱 Termux</b> dá problema, é nele que mudou de verdade. A versão 17/10 dele continua no instalador da 17/10, para comparar.</li>
+<li>Você pode fazer esta mesma comparação sozinho no <b>🔬 Laboratório → ⚖️ Comparar A × B → 📦 dois projetos</b>, com os dois .zip.</li>
+</ul>
+</div>
+</main>
+</body>
+</html>

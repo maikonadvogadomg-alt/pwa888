@@ -1,0 +1,185 @@
+{
+  "titulo": "pwa888",
+  "arquivo": "hub.html",
+  "itens": [
+    {
+      "path": "1.html",
+      "nome": "Mini SK",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon.svg"
+    },
+    {
+      "path": "2.html",
+      "nome": "🔬 Laboratório",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "4.html",
+      "nome": "Picotador de Memória e Backup",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "5.html",
+      "nome": "ProjetoLens — Analisador de Projetos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "6.html",
+      "nome": "Montador Universal",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "7.html",
+      "nome": "Mini SK 2",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon.svg"
+    },
+    {
+      "path": "8.html",
+      "nome": "Laboratório",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "11.html",
+      "nome": "Preparador Universal",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "12.html",
+      "nome": "Backup para o HD",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "13.html",
+      "nome": "Celular e PC Livres",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "14.html",
+      "nome": "Comparador de Versões",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "15.html",
+      "nome": "Colador de Links",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "16.html",
+      "nome": "Catalogador de Códigos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "17.html",
+      "nome": "Colecionador de Comandos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "18.html",
+      "nome": "Laboratório HTML",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "19.html",
+      "nome": "Numerador de Códigos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "20.html",
+      "nome": "🧹 Faxina de Repetidos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "21.html",
+      "nome": "Catalogador de Códigos",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "22.html",
+      "nome": "Raio-X de Pacotes",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "23.html",
+      "nome": "Arrumador de Backups",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "24.html",
+      "nome": "Raio-X de Pacotes",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "25.html",
+      "nome": "Colador de Links",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "26.html",
+      "nome": "Comparação Mini SK",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "27.html",
+      "nome": "Meus Links",
+      "desc": "",
+      "on": false,
+      "icone": "icons/icon-192.png"
+    },
+    {
+      "path": "index.html",
+      "nome": "Maikon Caldeira — Aplicativos",
+      "desc": "",
+      "on": true,
+      "icone": "icons/icon.svg"
+    }
+  ],
+  "sub": "",
+  "logo": "",
+  "tema": "escuro",
+  "links": []
+}
